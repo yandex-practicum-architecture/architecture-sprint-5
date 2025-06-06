@@ -8,7 +8,7 @@
 
 В ходе подготовки и настройки проекта были внесены следующие изменения:  
 
-1. **Увеличение числа эпох**:
+### 1. **Увеличение числа эпох**:
    В процессе обучения модели было решено увеличить количество эпох до 100 (`epochs: 100`). Это позволило улучшить качество модели и повысить её способность к точному распознаванию и обработке запросов пользователей. Изменения были внесены в файл конфигурации обучения (`config.yml`) или соответствующий скрипт, который отвечает за обучение модели.
 
 
@@ -51,11 +51,11 @@ policies:
 assistant_id: 20250606-233502-relative-castle
 ```
 
-2. **Настройка CORS**:
+### 2. **Настройка CORS**:
 
 Для обеспечения корректного взаимодействия между клиентским приложением, разработанным на React, и сервером Rasa, необходимо правильно настроить CORS (Cross-Origin Resource Sharing). Это позволит клиенту выполнять запросы к API сервера, находясь на другом домене или порту.
 
-### Шаги настройки CORS:
+#### Шаги настройки CORS:
 
 1. **Конфигурация CORS в Rasa**:
    В файле `endpoints.yml`, находящемся в корне нашего Rasa проекта, добавили/отредактировали следующее:
@@ -78,7 +78,7 @@ rasa run --enable-api -vv --cors "*"
 
    Это дополнительно подтвердит, что CORS настроен правильно.
    
-3. **Настройки, касающиеся темы микросервисной архитектуры**:
+### 3. **Настройки, касающиеся темы микросервисной архитектуры**:
 
 См. файлы `config.yml', `/data/nlu.yml`, '/data/rules.yml', '/data/stories.yml' в каталоге `configs`.
 
@@ -140,18 +140,18 @@ rasa train
 
 [api_calls_done.txt](api_calls_done.txt)  
 
-![browser-app.png](images-browser-app/Снимок экрана от 2025-06-07 00-13-44.png)  
+![browser-app.png](images-browser-app/images-browser-app(1).png)  
 
-![browser-app.png](images-browser-app/Снимок экрана от 2025-06-07 01-08-16.png)  
+![browser-app.png](images-browser-app/images-browser-app(2).png)  
 
-![images-rasa-logs-messages-from-browser-1.png](images-rasa-logs-messages-from-browser/Снимок экрана от 2025-06-07 00-15-03.png)  
+![images-rasa-logs-messages-from-browser-1.png](images-rasa-logs-messages-from-browser/images-rasa-logs-messages-from-browser(1).png)  
 
-![images-rasa-logs-messages-from-browser-1.png](images-rasa-logs-messages-from-browser/Снимок экрана от 2025-06-07 00-15-19.png)  
+![images-rasa-logs-messages-from-browser-5.png](images-rasa-logs-messages-from-browser/images-rasa-logs-messages-from-browser(5).png)  
 
-![images-rasa-logs-messages-from-browser-1.png](images-rasa-logs-messages-from-browser/Снимок экрана от 2025-06-07 00-15-59.png)  
+![images-rasa-logs-messages-from-browser-9.png](images-rasa-logs-messages-from-browser/images-rasa-logs-messages-from-browser(9).png)  
 
-![images-rasa-logs-messages-api-calls-1.png](images-rasa-logs-messages-api-calls/Снимок экрана от 2025-06-06 23-59-28.png)  
+![images-rasa-logs-messages-api-calls-2.png](images-rasa-logs-messages-api-calls/images-rasa-logs-messages-api-calls(2).png)  
 
-![images-rasa-logs-messages-api-calls-1.png](images-rasa-logs-messages-api-calls/Снимок экрана от 2025-06-06 23-59-43.png)  
+![images-rasa-logs-messages-api-calls-7.png](images-rasa-logs-messages-api-calls/images-rasa-logs-messages-api-calls(7).png)  
 
-![images-rasa-logs-messages-api-calls-1.png](images-rasa-logs-messages-api-calls/Снимок экрана от 2025-06-07 00-00-08.png)  
+![images-rasa-logs-messages-api-calls-12.png](images-rasa-logs-messages-api-calls/images-rasa-logs-messages-api-calls(12).png)  
