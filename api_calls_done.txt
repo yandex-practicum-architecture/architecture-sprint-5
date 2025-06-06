@@ -1,0 +1,171 @@
+michael@home:~$ curl -X POST -H "Content-Type: application/json" -d '{"sender": "test_user", "message": "Привет"}' http://localhost:5005/webhooks/rest/webhook | jq
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   466  100   416  100    50    667     80 --:--:-- --:--:-- --:--:--   747
+[
+  {
+    "recipient_id": "test_user",
+    "text": "Привет! Чем могу помочь в области архитектуры программного обеспечения?"
+  }
+]
+michael@home:~$ curl -X POST -H "Content-Type: application/json" -d '{"sender": "test_user", "message": "Привет"}' http://localhost:5005/webhooks/rest/webhook | jq
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   466  100   416  100    50   1187    142 --:--:-- --:--:-- --:--:--  1331
+[
+  {
+    "recipient_id": "test_user",
+    "text": "Привет! Чем могу помочь в области архитектуры программного обеспечения?"
+  }
+]
+michael@home:~$ curl -X POST -H "Content-Type: application/json" -d '{"sender": "test_user", "message": "Расскажите об архитектуре ПО"}' http://localhost:5005/webhooks/rest/webhook | jq
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  1119  100  1028  100    91   2722    240 --:--:-- --:--:-- --:--:--  2960
+[
+  {
+    "recipient_id": "test_user",
+    "text": "Архитектура ПО включает выбор структур, которые обеспечивают масштабируемость, гибкость и поддерживаемость приложения. Задайте конкретный вопрос по этой теме, и я помогу вам с информацией."
+  }
+]
+michael@home:~$ curl -X POST -H "Content-Type: application/json" -d '{"sender": "test_user", "message": "Здравствуйте"}' http://localhost:5005/webhooks/rest/webhook | jq
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   478  100   416  100    62   1182    176 --:--:-- --:--:-- --:--:--  1357
+[
+  {
+    "recipient_id": "test_user",
+    "text": "Привет! Чем могу помочь в области архитектуры программного обеспечения?"
+  }
+]
+michael@home:~$ curl -X POST -H "Content-Type: application/json" -d '{"sender": "test_user", "message": "Расскажите больше об этом"}' http://localhost:5005/webhooks/rest/webhook | jq
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   475  100   390  100    85    985    214 --:--:-- --:--:-- --:--:--  1199
+[
+  {
+    "recipient_id": "test_user",
+    "text": "Что именно вас интересует в архитектуре программного обеспечения?"
+  }
+]
+michael@home:~$ curl -X POST -H "Content-Type: application/json" -d '{"sender": "test_user", "message": "Добрый день"}' http://localhost:5005/webhooks/rest/webhook | jq
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   475  100   416  100    59   1187    168 --:--:-- --:--:-- --:--:--  1357
+[
+  {
+    "recipient_id": "test_user",
+    "text": "Привет! Чем могу помочь в области архитектуры программного обеспечения?"
+  }
+]
+michael@home:~$ curl -X POST -H "Content-Type: application/json" -d '{"sender": "test_user", "message": "До свидания"}' http://localhost:5005/webhooks/rest/webhook | jq
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   440  100   381  100    59   1087    168 --:--:-- --:--:-- --:--:--  1257
+[
+  {
+    "recipient_id": "test_user",
+    "text": "До свидания! Если появятся вопросы по архитектуре ПО, обращайтесь."
+  }
+]
+michael@home:~$ curl -X POST -H "Content-Type: application/json" -d '{"sender": "test_user", "message": "Привет"}' http://localhost:5005/webhooks/rest/webhook | jq
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   466  100   416  100    50   1163    139 --:--:-- --:--:-- --:--:--  1301
+[
+  {
+    "recipient_id": "test_user",
+    "text": "Привет! Чем могу помочь в области архитектуры программного обеспечения?"
+  }
+]
+michael@home:~$ curl -X POST -H "Content-Type: application/json" -d '{"sender": "test_user", "message": "Какие подходы существуют в архитектуре?"}' http://localhost:5005/webhooks/rest/webhook | jq
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  1139  100  1028  100   111   2503    270 --:--:-- --:--:-- --:--:--  2778
+[
+  {
+    "recipient_id": "test_user",
+    "text": "Архитектура ПО включает выбор структур, которые обеспечивают масштабируемость, гибкость и поддерживаемость приложения. Задайте конкретный вопрос по этой теме, и я помогу вам с информацией."
+  }
+]
+michael@home:~$ curl -X POST -H "Content-Type: application/json" -d '{"sender": "test_user", "message": "Привет"}' http://localhost:5005/webhooks/rest/webhook | jq
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   466  100   416  100    50   1153    138 --:--:-- --:--:-- --:--:--  1290
+[
+  {
+    "recipient_id": "test_user",
+    "text": "Привет! Чем могу помочь в области архитектуры программного обеспечения?"
+  }
+]
+michael@home:~$ curl -X POST -H "Content-Type: application/json" -d '{"sender": "test_user", "message": "Да"}' http://localhost:5005/webhooks/rest/webhook | jq
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   432  100   390  100    42   1061    114 --:--:-- --:--:-- --:--:--  1177
+[
+  {
+    "recipient_id": "test_user",
+    "text": "Что именно вас интересует в архитектуре программного обеспечения?"
+  }
+]
+michael@home:~$ curl -X POST -H "Content-Type: application/json" -d '{"sender": "test_user", "message": "Привет"}' http://localhost:5005/webhooks/rest/webhook | jq
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   466  100   416  100    50   1165    140 --:--:-- --:--:-- --:--:--  1305
+[
+  {
+    "recipient_id": "test_user",
+    "text": "Привет! Чем могу помочь в области архитектуры программного обеспечения?"
+  }
+]
+michael@home:~$ curl -X POST -H "Content-Type: application/json" -d '{"sender": "test_user", "message": "Нет"}' http://localhost:5005/webhooks/rest/webhook | jq
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   434  100   390  100    44   1121    126 --:--:-- --:--:-- --:--:--  1247
+[
+  {
+    "recipient_id": "test_user",
+    "text": "Что именно вас интересует в архитектуре программного обеспечения?"
+  }
+]
+michael@home:~$ curl -X POST -H "Content-Type: application/json" -d '{"sender": "test_user", "message": "Привет"}' http://localhost:5005/webhooks/rest/webhook | jq
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   466  100   416  100    50   1138    136 --:--:-- --:--:-- --:--:--  1276
+[
+  {
+    "recipient_id": "test_user",
+    "text": "Привет! Чем могу помочь в области архитектуры программного обеспечения?"
+  }
+]
+michael@home:~$ curl -X POST -H "Content-Type: application/json" -d '{"sender": "test_user", "message": "Что такое микросервисная архитектура?"}' http://localhost:5005/webhooks/rest/webhook | jq
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  1136  100  1028  100   108   2359    247 --:--:-- --:--:-- --:--:--  2605
+[
+  {
+    "recipient_id": "test_user",
+    "text": "Архитектура ПО включает выбор структур, которые обеспечивают масштабируемость, гибкость и поддерживаемость приложения. Задайте конкретный вопрос по этой теме, и я помогу вам с информацией."
+  }
+]
+michael@home:~$ curl -X POST -H "Content-Type: application/json" -d '{"sender": "test_user", "message": "Здравствуйте"}' http://localhost:5005/webhooks/rest/webhook | jq
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   478  100   416  100    62   1070    159 --:--:-- --:--:-- --:--:--  1231
+[
+  {
+    "recipient_id": "test_user",
+    "text": "Привет! Чем могу помочь в области архитектуры программного обеспечения?"
+  }
+]
+michael@home:~$ curl -X POST -H "Content-Type: application/json" -d '{"sender": "test_user", "message": "Увидимся"}' http://localhost:5005/webhooks/rest/webhook | jq
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   435  100   381  100    54   1017    144 --:--:-- --:--:-- --:--:--  1163
+[
+  {
+    "recipient_id": "test_user",
+    "text": "До свидания! Если появятся вопросы по архитектуре ПО, обращайтесь."
+  }
+]
+michael@home:~$ 
