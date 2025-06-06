@@ -58,7 +58,7 @@ assistant_id: 20250606-233502-relative-castle
 #### Шаги настройки CORS:
 
 1. **Конфигурация CORS в Rasa**:
-   В файле `endpoints.yml`, находящемся в корне нашего Rasa проекта, добавили/отредактировали следующее:
+   В файле [endpoints.yml](/configs/endpoints.yml), находящемся в корне нашего Rasa проекта, добавили/отредактировали следующее:
 
 ```
 action_endpoint:
@@ -80,7 +80,7 @@ rasa run --enable-api -vv --cors "*"
    
 ### 3. **Настройки, касающиеся темы микросервисной архитектуры**:
 
-См. файлы [config.yml](config.yml), [/data/nlu.yml](/configs/nlu.yml), [/data/rules.yml](/configs/rules.yml), [/data/stories.yml](/configs/stories.yml) в каталоге [configs](/configs).
+См. файлы [config.yml](configs/config.yml), [/data/nlu.yml](/configs/nlu.yml), [/data/rules.yml](/configs/rules.yml), [/data/stories.yml](/configs/stories.yml) в каталоге [configs](/configs).
 
 В проект была добавлена поддержка вопросов по микросервисной архитектуре, 
 что позволяет пользователям получать специализированную информацию по этой теме. 
